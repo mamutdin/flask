@@ -9,7 +9,7 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 
 app = Flask('app')
-DSN = 'postgresql://postgres:A84db68d@127.0.0.1:5432/flask'
+DSN = 'postgresql://postgres:postgres@127.0.0.1:5432/flask'
 
 
 class HTTPError(Exception):

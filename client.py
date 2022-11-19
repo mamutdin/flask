@@ -7,7 +7,7 @@ data = requests.post('http://127.0.0.1:5000/test/',
                          'owner': 'MTV'
                      })
 
-# get_adv = requests.get('http://127.0.0.1:5000/adv/1')
+# get_adv = requests.get('http://127.0.0.1:5000/test/1')
 #
 # patch_adv = requests.patch('http://127.0.0.1:5000/test/1', json={'title': 'News from Russia'})
 #

@@ -1,17 +1,17 @@
 import requests
 
 
-data = requests.post('http://127.0.0.1:5000/test/',
+data = requests.post('http://127.0.0.1:5000/adv/',
                      json={
                          'title': 'News',
                          'owner': 'MTV'
                      })
 
-# get_adv = requests.get('http://127.0.0.1:5000/test/1')
+# get_adv = requests.get('http://127.0.0.1:5000/adv/1')
 #
-# patch_adv = requests.patch('http://127.0.0.1:5000/test/1', json={'title': 'News from Russia'})
+# patch_adv = requests.patch('http://127.0.0.1:5000/adv/1', json={'title': 'News from Russia'})
 #
-# del_adv = requests.delete('http://127.0.0.1:5000/test/1')
+# del_adv = requests.delete('http://127.0.0.1:5000/adv/1')
 
 print(data.text)
 print(data.status_code)

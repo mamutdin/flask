@@ -128,8 +128,8 @@ class AdView(MethodView):
             return jsonify({'status': 'ok'})
 
 
-app.add_url_rule('/test/<int:adv_id>', view_func=AdView.as_view('advertisement_get'),
+app.add_url_rule('/adv/<int:adv_id>', view_func=AdView.as_view('advertisement_get'),
                  methods=['GET', 'PATCH', 'DELETE'])
-app.add_url_rule('/test/', view_func=AdView.as_view('advertisements'), methods=['POST'])
+app.add_url_rule('/adv/', view_func=AdView.as_view('advertisements'), methods=['POST'])
 
 app.run()
